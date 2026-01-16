@@ -2,6 +2,12 @@ using UnityEngine;
 using System.Collections.Generic;
 using Debug = UnityEngine.Debug;
 
+// Represents a city region defined by real-world coordinates.
+// Each CityRegion has spatial boundaries (polygon vertices),
+// basic land-use characteristics and optional subregions.
+// Used to classify locations within the city
+
+
 [System.Serializable]
 public class CityRegion
 {
@@ -33,5 +39,6 @@ public class CityRegion
         subRegions = subregions;
     }
 }
+
 
 
