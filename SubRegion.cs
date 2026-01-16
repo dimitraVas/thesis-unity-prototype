@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using Debug = UnityEngine.Debug;
 
+// Represents a subdivision of a CityRegion defined by polygonal boundaries.
+
 [System.Serializable]
 public class SubRegion
 {
@@ -16,4 +18,5 @@ public class SubRegion
         subRegionCode = code;
         subRegionVertices = vertices;
     }
+
 }
