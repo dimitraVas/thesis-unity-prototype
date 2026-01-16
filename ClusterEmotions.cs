@@ -7,6 +7,11 @@ using Debug = UnityEngine.Debug;
 using Object = UnityEngine.Object;
 using System.Collections;
 
+// Manages emotion analysis and spatial reorganization of particle clusters.
+// This component listens to cluster and particle update events
+// emotional data per cluster, identifies dominant categories,
+// and translates these results into positional adjustments for particles
+// and cluster representations within the scene.
 
 public class ClusterEmotions : MonoBehaviour
 {
@@ -58,7 +63,7 @@ public class ClusterEmotions : MonoBehaviour
     }
 
 
-    // Event handler for cluster update
+    // Event function for cluster update
     private void UpdateClusterEmotions(List<int> particleCluster)
     {
         isClusterUpdated = true;
@@ -68,7 +73,7 @@ public class ClusterEmotions : MonoBehaviour
         CheckEventsAndProcess();
     }
 
-    // Event handler for emotion assignment
+    // Event function for emotion assignment
     private void UpdateEmotionAssigned()
     {
         isEmotionAssigned = true;
@@ -145,7 +150,7 @@ public class ClusterEmotions : MonoBehaviour
         List<string> mostProminentEmotions = new List<string>();
         int maxCount = 0;
 
-        // Iterate through the dictionary to find the emotion(s) with the highest count
+        // Go through the dictionary to find the emotions with the highest count
         foreach (var entry in emotionCounts)
         {
             if (entry.Value > maxCount)
@@ -197,8 +202,8 @@ public class ClusterEmotions : MonoBehaviour
         List<string> sortedEmotions = pairedList.Select(pair => pair.Key).ToList();
 
         // Debug the sorted results
-        Debug.Log("Sorted Counts: " + string.Join(", ", sortedCounts));   // Prints: e.g., 2, 2, 5
-        Debug.Log("Sorted Emotions: " + string.Join(", ", sortedEmotions)); // Prints: e.g., Negative, Neutral, Positive
+        Debug.Log("Sorted Counts: " + string.Join(", ", sortedCounts));   
+        Debug.Log("Sorted Emotions: " + string.Join(", ", sortedEmotions)); 
 
         // Step 5: Analyze the sorted counts
         var groupedCounts = sortedCounts.GroupBy(value => value).ToList();
@@ -448,8 +453,8 @@ public class ClusterEmotions : MonoBehaviour
         List<string> sortedEmotions = pairedList.Select(pair => pair.Key).ToList();
 
         // Debug the sorted results
-        Debug.Log("Sorted Counts: " + string.Join(", ", sortedCounts));   // Prints: e.g., 2, 2, 5
-        Debug.Log("Sorted Emotions: " + string.Join(", ", sortedEmotions)); // Prints: e.g., Negative, Neutral, Positive
+        Debug.Log("Sorted Counts: " + string.Join(", ", sortedCounts));   
+        Debug.Log("Sorted Emotions: " + string.Join(", ", sortedEmotions)); 
 
         // Step 5: Analyze the sorted counts
         var groupedCounts = sortedCounts.GroupBy(value => value).ToList();
@@ -593,7 +598,7 @@ public class ClusterEmotions : MonoBehaviour
                     spawnManager.MoveAloneParticles(medEmotionsToMove, 0); // Default unity y
                 }
 
-                // Debugging the contents of the lists
+                
                 // Debugging the contents of the lists
                 Debug.Log("minEmotionsToMove: " + string.Join(", ", minEmotionsToMove));
                 Debug.Log("medEmotionsToMove: " + string.Join(", ", maxEmotionsToMove));
@@ -979,3 +984,4 @@ public class ClusterEmotions : MonoBehaviour
 
     
 }
+
