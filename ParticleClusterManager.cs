@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 using System.Linq;
 
 // Handles spatial clustering of particles based on proximity 
-// Manges the creation, update and transformation of clusters.
+// Manages the creation, update and transformation of clusters.
 // This component detects particle clusters in real time, computes centroids,
 // Spawns or updates cluster objects, assigns particles to orbits,
 // Maintains cluster state 
@@ -601,5 +601,6 @@ public class ParticleClusterManager : MonoBehaviour
     }
 
 }
+
 
 
