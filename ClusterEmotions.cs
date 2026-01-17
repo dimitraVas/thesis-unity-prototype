@@ -7,11 +7,11 @@ using Debug = UnityEngine.Debug;
 using Object = UnityEngine.Object;
 using System.Collections;
 
-// Manages emotion analysis and spatial reorganization of particle clusters.
+// Manages emotion analysis and spatial organization of clusters.
 // This component listens to cluster and particle update events
-// emotional data per cluster, identifies dominant categories,
-// and translates these results into positional adjustments for particles
-// and cluster representations within the scene.
+// Stores emotional data per cluster, identifies dominant categories,
+// and translates these results into represantational adjustments for particles
+
 
 public class ClusterEmotions : MonoBehaviour
 {
@@ -984,4 +984,5 @@ public class ClusterEmotions : MonoBehaviour
 
     
 }
+
 
