@@ -2,7 +2,7 @@ using UnityEngine;
 
 // Class representing a  particle's emotional and visual attributes.
 // Stores user-provided input, emotion classification, color information,
-// An index used for identification and 
+// An index used for identification 
 
 [System.Serializable]
 public class ParticleData
@@ -23,4 +23,5 @@ public class ParticleData
         this.inputText = inputText;
     }
 }
+
 
