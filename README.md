@@ -5,3 +5,7 @@ The prototype was developed in Unity using C# and focuses on translating real-wo
 Agent responses are stored and visualized as spatial data, allowing patterns and clusters to emerge. These clusters are analyzed and organised dynamically, forming spatial representations.
 
 The uploaded scripts represent selected systems from the larger Unity prototype. Specifically, the scripts showcase the clustering logic, emotion data collection logic and region-based data classification within the simulated urban environment.
+
+<p align="center">
+  <img src="images/FACADE_01.jpg" width="200">
+</p>
