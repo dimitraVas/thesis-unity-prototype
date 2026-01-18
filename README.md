@@ -7,13 +7,13 @@ Agent responses are stored and visualized as spatial data, allowing patterns and
 The uploaded scripts represent selected systems from the larger Unity prototype. Specifically, the scripts showcase the clustering logic, emotion data collection logic and region-based data classification within the simulated urban environment.
 
 <p align="center">
-  <img src="images/18_MOCKUP1.jpg" width="700">
+  <img src="images/18_MOCKUP1.jpg" width="400">
 </p>
 
 <p align="center">
-  <img src="images/18_MOCKUP14.jpg" width="700">
+  <img src="images/18_MOCKUP14.jpg" width="400">
 </p>
 
 <p align="center">
-  <img src="images/18_MOCKUP8.jpg" width="700">
+  <img src="images/18_MOCKUP8.jpg" width="400">
 </p>
