@@ -9,3 +9,11 @@ The uploaded scripts represent selected systems from the larger Unity prototype.
 <p align="center">
   <img src="images/18_MOCKUP1.jpg" width="700">
 </p>
+
+<p align="center">
+  <img src="images/18_MOCKUP14.jpg" width="700">
+</p>
+
+<p align="center">
+  <img src="images/18_MOCKUP8.jpg" width="700">
+</p>
